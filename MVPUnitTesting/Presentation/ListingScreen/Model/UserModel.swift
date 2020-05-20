@@ -14,10 +14,10 @@ struct UserModel {
     private let lastName: String
     
     var name: String {
-        return "\(title). \(firstName) \(lastName)"
+        return "\(title) \(firstName) \(lastName)"
     }
     
-    static func fromDomain(item: User) -> UserModel {
-        return self.init(title: item.title, firstName: item.firstName, lastName: item.lastName)
+    static func fromDomain(user: User) -> UserModel {
+        return self.init(title: user.title, firstName: user.firstName, lastName: user.lastName)
     }
 }

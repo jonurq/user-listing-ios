@@ -12,10 +12,23 @@
 		D03B295F2474896A005E1944 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B295E2474896A005E1944 /* BaseViewController.swift */; };
 		D03B29612474899B005E1944 /* BaseViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29602474899B005E1944 /* BaseViewDelegate.swift */; };
 		D03B296324748C5A005E1944 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296224748C5A005E1944 /* LoadingViewController.swift */; };
+		D03B296B2474A06F005E1944 /* UserRepresentationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296A2474A06F005E1944 /* UserRepresentationTest.swift */; };
+		D03B29702474A430005E1944 /* UserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296F2474A430005E1944 /* UserModelTest.swift */; };
+		D03B29742474AA11005E1944 /* ListingPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29732474AA11005E1944 /* ListingPresenterTest.swift */; };
+		D03B29772474AA6E005E1944 /* ListingInstanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29762474AA6E005E1944 /* ListingInstanceTest.swift */; };
+		D03B29792474ABE4005E1944 /* BaseStubbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29782474ABE4005E1944 /* BaseStubbedViewController.swift */; };
+		D03B297B2474BB46005E1944 /* ListingStubbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297A2474BB46005E1944 /* ListingStubbedViewController.swift */; };
+		D03B297D2474BB76005E1944 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297C2474BB76005E1944 /* UserRepositoryMock.swift */; };
+		D03B297F2474BCAD005E1944 /* ListingUseCasesInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297E2474BCAD005E1944 /* ListingUseCasesInstance.swift */; };
+		D03B29822474BCCF005E1944 /* ListingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29812474BCCF005E1944 /* ListingUseCase.swift */; };
+		D03B29852474D0C0005E1944 /* UsersRepositoryImplementationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29842474D0C0005E1944 /* UsersRepositoryImplementationTest.swift */; };
+		D03B29872474D148005E1944 /* UsersApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29862474D148005E1944 /* UsersApiMock.swift */; };
+		D03B298A2474D35A005E1944 /* UsersUseCasesInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29892474D35A005E1944 /* UsersUseCasesInstance.swift */; };
+		D03B298C2474D369005E1944 /* UsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B298B2474D369005E1944 /* UsersUseCase.swift */; };
+		D03B298E2474D923005E1944 /* ListingViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B298D2474D923005E1944 /* ListingViewControllerTest.swift */; };
 		D0900C7B246C8D7F00FC42E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0900C7A246C8D7F00FC42E6 /* AppDelegate.swift */; };
 		D0900C84246C8D8400FC42E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0900C83246C8D8400FC42E6 /* Assets.xcassets */; };
 		D0900C87246C8D8400FC42E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0900C85246C8D8400FC42E6 /* LaunchScreen.storyboard */; };
-		D0900C92246C8D8400FC42E6 /* MVPUnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0900C91246C8D8400FC42E6 /* MVPUnitTestingTests.swift */; };
 		D0900CA8246CAC6E00FC42E6 /* ListingInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0900CA7246CAC6E00FC42E6 /* ListingInstance.swift */; };
 		D0900CAA246CAC8100FC42E6 /* ListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0900CA9246CAC8100FC42E6 /* ListingPresenter.swift */; };
 		D0900CAC246CAC9C00FC42E6 /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0900CAB246CAC9C00FC42E6 /* ListingViewController.swift */; };
@@ -53,13 +66,26 @@
 		D03B295E2474896A005E1944 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D03B29602474899B005E1944 /* BaseViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewDelegate.swift; sourceTree = "<group>"; };
 		D03B296224748C5A005E1944 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D03B296A2474A06F005E1944 /* UserRepresentationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentationTest.swift; sourceTree = "<group>"; };
+		D03B296F2474A430005E1944 /* UserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTest.swift; sourceTree = "<group>"; };
+		D03B29732474AA11005E1944 /* ListingPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenterTest.swift; sourceTree = "<group>"; };
+		D03B29762474AA6E005E1944 /* ListingInstanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInstanceTest.swift; sourceTree = "<group>"; };
+		D03B29782474ABE4005E1944 /* BaseStubbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStubbedViewController.swift; sourceTree = "<group>"; };
+		D03B297A2474BB46005E1944 /* ListingStubbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingStubbedViewController.swift; sourceTree = "<group>"; };
+		D03B297C2474BB76005E1944 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
+		D03B297E2474BCAD005E1944 /* ListingUseCasesInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingUseCasesInstance.swift; sourceTree = "<group>"; };
+		D03B29812474BCCF005E1944 /* ListingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingUseCase.swift; sourceTree = "<group>"; };
+		D03B29842474D0C0005E1944 /* UsersRepositoryImplementationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepositoryImplementationTest.swift; sourceTree = "<group>"; };
+		D03B29862474D148005E1944 /* UsersApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersApiMock.swift; sourceTree = "<group>"; };
+		D03B29892474D35A005E1944 /* UsersUseCasesInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCasesInstance.swift; sourceTree = "<group>"; };
+		D03B298B2474D369005E1944 /* UsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCase.swift; sourceTree = "<group>"; };
+		D03B298D2474D923005E1944 /* ListingViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerTest.swift; sourceTree = "<group>"; };
 		D0900C77246C8D7F00FC42E6 /* MVPUnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPUnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0900C7A246C8D7F00FC42E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0900C83246C8D8400FC42E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0900C86246C8D8400FC42E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0900C88246C8D8400FC42E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0900C8D246C8D8400FC42E6 /* MVPUnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0900C91246C8D8400FC42E6 /* MVPUnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUnitTestingTests.swift; sourceTree = "<group>"; };
 		D0900C93246C8D8400FC42E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0900CA7246CAC6E00FC42E6 /* ListingInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInstance.swift; sourceTree = "<group>"; };
 		D0900CA9246CAC8100FC42E6 /* ListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenter.swift; sourceTree = "<group>"; };
@@ -128,6 +154,122 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
+		D03B296624749BF0005E1944 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29882474D2FC005E1944 /* UsersUseCase */,
+				D03B29682474A046005E1944 /* Infrastructure */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D03B296724749BF8005E1944 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29802474BCB1005E1944 /* ListingUseCase */,
+				D03B296D2474A3DF005E1944 /* Commons */,
+				D03B296C2474A3D7005E1944 /* ListingScreen */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		D03B29682474A046005E1944 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29832474D0A7005E1944 /* Repository */,
+				D03B29692474A05B005E1944 /* Representation */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		D03B29692474A05B005E1944 /* Representation */ = {
+			isa = PBXGroup;
+			children = (
+				D03B296A2474A06F005E1944 /* UserRepresentationTest.swift */,
+			);
+			name = Representation;
+			sourceTree = "<group>";
+		};
+		D03B296C2474A3D7005E1944 /* ListingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29752474AA43005E1944 /* Instance */,
+				D03B29722474A9FF005E1944 /* Presenter */,
+				D03B29712474A8B6005E1944 /* View */,
+				D03B296E2474A402005E1944 /* Model */,
+			);
+			name = ListingScreen;
+			sourceTree = "<group>";
+		};
+		D03B296D2474A3DF005E1944 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29782474ABE4005E1944 /* BaseStubbedViewController.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		D03B296E2474A402005E1944 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D03B296F2474A430005E1944 /* UserModelTest.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D03B29712474A8B6005E1944 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D03B298D2474D923005E1944 /* ListingViewControllerTest.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D03B29722474A9FF005E1944 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29732474AA11005E1944 /* ListingPresenterTest.swift */,
+				D03B297A2474BB46005E1944 /* ListingStubbedViewController.swift */,
+				D03B297C2474BB76005E1944 /* UserRepositoryMock.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		D03B29752474AA43005E1944 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29762474AA6E005E1944 /* ListingInstanceTest.swift */,
+			);
+			name = Instance;
+			sourceTree = "<group>";
+		};
+		D03B29802474BCB1005E1944 /* ListingUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D03B297E2474BCAD005E1944 /* ListingUseCasesInstance.swift */,
+				D03B29812474BCCF005E1944 /* ListingUseCase.swift */,
+			);
+			name = ListingUseCase;
+			sourceTree = "<group>";
+		};
+		D03B29832474D0A7005E1944 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29842474D0C0005E1944 /* UsersRepositoryImplementationTest.swift */,
+				D03B29862474D148005E1944 /* UsersApiMock.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		D03B29882474D2FC005E1944 /* UsersUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D03B29892474D35A005E1944 /* UsersUseCasesInstance.swift */,
+				D03B298B2474D369005E1944 /* UsersUseCase.swift */,
+			);
+			name = UsersUseCase;
+			sourceTree = "<group>";
+		};
 		D0900C6E246C8D7F00FC42E6 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +306,8 @@
 		D0900C90246C8D8400FC42E6 /* MVPUnitTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				D0900C91246C8D8400FC42E6 /* MVPUnitTestingTests.swift */,
+				D03B296724749BF8005E1944 /* Presentation */,
+				D03B296624749BF0005E1944 /* Core */,
 				D0900C93246C8D8400FC42E6 /* Info.plist */,
 			);
 			path = MVPUnitTestingTests;
@@ -513,7 +656,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0900C92246C8D8400FC42E6 /* MVPUnitTestingTests.swift in Sources */,
+				D03B29792474ABE4005E1944 /* BaseStubbedViewController.swift in Sources */,
+				D03B297D2474BB76005E1944 /* UserRepositoryMock.swift in Sources */,
+				D03B29852474D0C0005E1944 /* UsersRepositoryImplementationTest.swift in Sources */,
+				D03B29702474A430005E1944 /* UserModelTest.swift in Sources */,
+				D03B29872474D148005E1944 /* UsersApiMock.swift in Sources */,
+				D03B298E2474D923005E1944 /* ListingViewControllerTest.swift in Sources */,
+				D03B298A2474D35A005E1944 /* UsersUseCasesInstance.swift in Sources */,
+				D03B297F2474BCAD005E1944 /* ListingUseCasesInstance.swift in Sources */,
+				D03B29822474BCCF005E1944 /* ListingUseCase.swift in Sources */,
+				D03B296B2474A06F005E1944 /* UserRepresentationTest.swift in Sources */,
+				D03B297B2474BB46005E1944 /* ListingStubbedViewController.swift in Sources */,
+				D03B29772474AA6E005E1944 /* ListingInstanceTest.swift in Sources */,
+				D03B29742474AA11005E1944 /* ListingPresenterTest.swift in Sources */,
+				D03B298C2474D369005E1944 /* UsersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

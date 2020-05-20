@@ -12,13 +12,16 @@ class ListingPresenter {
     
     weak var view: ListingViewDelegate?
     let repository: UsersRepository
+    let queue: DispatchQueue
     let limit = 20
     
-    required init(repository: UsersRepository) {
+    required init(repository: UsersRepository, queue: DispatchQueue) {
         self.repository = repository
+        self.queue = queue
     }
     
     func viewLoaded() {
+        //TODO: Localize string
         view?.show(title: "Users")
         getUsers()
     }
@@ -26,15 +29,15 @@ class ListingPresenter {
     private func getUsers() {
         view?.showLoading()
         repository.getUsers(limit: limit, onSuccess: { (users) in
-            DispatchQueue.main.async {
+            self.queue.async {
                 self.view?.hideLoading()
-                self.view?.show(items: users.map { UserModel.fromDomain(item: $0) })
+                self.view?.show(items: users.map { UserModel.fromDomain(user: $0) })
             }
         }) { (error) in
-            //TODO: Handle all error cases
-            DispatchQueue.main.async {
+            //TODO: Handle all infra error cases to show more detailed message to user
+            self.queue.async {
                 self.view?.hideLoading()
-                self.view?.showAlert(title: "Error", message: error.localizedDescription)
+                self.view?.showAlert(title: "Error", message: "Ups! Algo salió mal")
             }
         }
     }

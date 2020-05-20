@@ -17,6 +17,6 @@ class ListingInstance {
     }
     
     static private func presenter() -> ListingPresenter {
-        return ListingPresenter(repository: InfrastructureInstance.usersRepository())
+        return ListingPresenter(repository: InfrastructureInstance.usersRepository(), queue: DispatchQueue.main)
     }
 }

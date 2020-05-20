@@ -26,6 +26,12 @@ class ListingPresenter {
         getUsers()
     }
     
+    func itemTap(user: UserModel) {
+        self.queue.async {
+            self.view?.showAlert(title: "User", message: user.name)
+        }
+    }
+    
     private func getUsers() {
         view?.showLoading()
         repository.getUsers(limit: limit, onSuccess: { (users) in

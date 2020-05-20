@@ -34,6 +34,7 @@ class ListingViewController: BaseViewController {
     private func setupView() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -74,6 +75,6 @@ extension ListingViewController: UITableViewDataSource {
 
 extension ListingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO:
+        presenter.itemTap(user: items[indexPath.row])
     }
 }

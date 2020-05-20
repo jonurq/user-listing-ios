@@ -11,7 +11,6 @@
 		B326FA6BC4C0D349D2E8A675 /* Pods_MVPUnitTestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01596919897E2545737EDFD /* Pods_MVPUnitTestingTests.framework */; };
 		D03B295F2474896A005E1944 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B295E2474896A005E1944 /* BaseViewController.swift */; };
 		D03B29612474899B005E1944 /* BaseViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29602474899B005E1944 /* BaseViewDelegate.swift */; };
-		D03B296324748C5A005E1944 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296224748C5A005E1944 /* LoadingViewController.swift */; };
 		D03B296B2474A06F005E1944 /* UserRepresentationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296A2474A06F005E1944 /* UserRepresentationTest.swift */; };
 		D03B29702474A430005E1944 /* UserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296F2474A430005E1944 /* UserModelTest.swift */; };
 		D03B29742474AA11005E1944 /* ListingPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29732474AA11005E1944 /* ListingPresenterTest.swift */; };
@@ -65,7 +64,6 @@
 		C3E390134534342B8191F416 /* Pods-MVPUnitTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPUnitTesting.debug.xcconfig"; path = "Target Support Files/Pods-MVPUnitTesting/Pods-MVPUnitTesting.debug.xcconfig"; sourceTree = "<group>"; };
 		D03B295E2474896A005E1944 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D03B29602474899B005E1944 /* BaseViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewDelegate.swift; sourceTree = "<group>"; };
-		D03B296224748C5A005E1944 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		D03B296A2474A06F005E1944 /* UserRepresentationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentationTest.swift; sourceTree = "<group>"; };
 		D03B296F2474A430005E1944 /* UserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTest.swift; sourceTree = "<group>"; };
 		D03B29732474AA11005E1944 /* ListingPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenterTest.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				D03B295E2474896A005E1944 /* BaseViewController.swift */,
 				D03B29602474899B005E1944 /* BaseViewDelegate.swift */,
-				D03B296224748C5A005E1944 /* LoadingViewController.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -636,7 +633,6 @@
 				D0900CB0246CADFE00FC42E6 /* ListingViewDelegate.swift in Sources */,
 				D09EB02824737BDC009E5359 /* InfrastructureInstance.swift in Sources */,
 				D0C2C99E246DA34700EA0CE6 /* UserModel.swift in Sources */,
-				D03B296324748C5A005E1944 /* LoadingViewController.swift in Sources */,
 				D0900CA8246CAC6E00FC42E6 /* ListingInstance.swift in Sources */,
 				D09EB02324736F0C009E5359 /* ApiError.swift in Sources */,
 				D09EB01D247368D1009E5359 /* UsersApi.swift in Sources */,

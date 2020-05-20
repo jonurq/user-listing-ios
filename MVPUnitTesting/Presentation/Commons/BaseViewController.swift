@@ -10,18 +10,26 @@ import UIKit
 
 class BaseViewController: UIViewController, BaseViewDelegate {
     
-    let loadingViewController = LoadingViewController()
+    var spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .white)
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        return spinner
+    }()
     
     func showLoading() {
-        addChild(loadingViewController)
-        loadingViewController.view.frame = view.frame
-        view.addSubview(loadingViewController.view)
-        loadingViewController.didMove(toParent: self)
+        view.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        
+        spinner.startAnimating()
+        view.addSubview(spinner)
+
+        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     func hideLoading() {
-        loadingViewController.willMove(toParent: nil)
-        loadingViewController.view.removeFromSuperview()
-        loadingViewController.removeFromParent()
+        if spinner.isDescendant(of: self.view) {
+            spinner.stopAnimating()
+            spinner.removeFromSuperview()
+        }
     }
 }

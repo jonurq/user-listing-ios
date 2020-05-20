@@ -45,7 +45,7 @@ class ListingPresenterTest: QuickSpec {
                 }
             }
             
-            context("When init presenter with mock repository 5 users and view loaded") {
+            context("When init presenter with mock repository 5 users and view loaded and tap an user") {
                 
                 beforeEach {
                     self.vc = ListingStubbedViewController()
@@ -60,6 +60,11 @@ class ListingPresenterTest: QuickSpec {
                     expect(self.vc.showItemsWasCalled).to(beTrue())
                     expect(self.vc.hideLoadingWasCalled).to(beTrue())
                     expect(self.vc.showAlertWasCalled).to(beFalse())
+                    
+                    self.presenter.itemTap(user: self.vc.items![0])
+                    self.queue.sync {}
+                    
+                    expect(self.vc.showAlertWasCalled).to(beTrue())
                 }
                 
                 it("Should fetch five users and set view correctly") {

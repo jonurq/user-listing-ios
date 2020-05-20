@@ -11,8 +11,8 @@ import Foundation
 class InfrastructureInstance {
     static let baseUrl = "https://randomuser.me/"
     
-    static func usersRepository() -> UsersRepository {
-        return UsersRepositoryImplementation(service:
-            UsersApiImplementation(baseUrl: InfrastructureInstance.baseUrl))
+    static func usersRepository() -> UsersRepositoryProtocol {
+        return UsersRepository(service:
+            URLSessionUsersApi(baseUrl: InfrastructureInstance.baseUrl))
     }
 }

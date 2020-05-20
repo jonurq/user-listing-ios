@@ -11,11 +11,11 @@ import Foundation
 class ListingPresenter {
     
     weak var view: ListingViewDelegate?
-    let repository: UsersRepository
+    let repository: UsersRepositoryProtocol
     let queue: DispatchQueue
     let limit = 20
     
-    required init(repository: UsersRepository, queue: DispatchQueue) {
+    required init(repository: UsersRepositoryProtocol, queue: DispatchQueue) {
         self.repository = repository
         self.queue = queue
     }
@@ -26,7 +26,7 @@ class ListingPresenter {
         getUsers()
     }
     
-    func itemTap(user: UserModel) {
+    func didTap(user: UserModel) {
         self.queue.async {
             self.view?.showAlert(title: "User", message: user.name)
         }

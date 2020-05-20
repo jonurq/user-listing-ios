@@ -1,5 +1,5 @@
 //
-//  FetchItemsRepositoryImplementation.swift
+//  UsersRepository.swift
 //  MVPUnitTesting
 //
 //  Created by Jonatan Urquiza on 5/14/20.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class UsersRepositoryImplementation: UsersRepository {
+class UsersRepository: UsersRepositoryProtocol {
     
-    let service: UsersApi
+    let service: UsersApiProtocol
     
-    init(service: UsersApi) {
+    init(service: UsersApiProtocol) {
         self.service = service
     }
     

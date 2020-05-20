@@ -75,6 +75,6 @@ extension ListingViewController: UITableViewDataSource {
 
 extension ListingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.itemTap(user: items[indexPath.row])
+        presenter.didTap(user: items[indexPath.row])
     }
 }

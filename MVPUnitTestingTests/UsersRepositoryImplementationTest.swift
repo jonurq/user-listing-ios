@@ -13,7 +13,7 @@ import Nimble
 
 class UsersRepositoryImplementationTest: QuickSpec {
     
-    var repository: UsersRepositoryImplementation!
+    var repository: UsersRepository!
     
     override func spec() {
         describe("Users Repository Implementation Test") {

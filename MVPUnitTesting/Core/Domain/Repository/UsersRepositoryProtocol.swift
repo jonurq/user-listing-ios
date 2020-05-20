@@ -1,5 +1,5 @@
 //
-//  UsersRepository.swift
+//  UsersRepositoryProtocol.swift
 //  MVPUnitTesting
 //
 //  Created by Jonatan Urquiza on 5/14/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol UsersRepository {
+protocol UsersRepositoryProtocol {
     func getUsers(limit: Int, onSuccess: @escaping ([User]) -> Void, onError: @escaping (Error) -> Void)
 }

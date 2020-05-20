@@ -17,7 +17,7 @@ class ListingUseCasesInstance {
         return presenter
     }
     
-    static func resolveRepository(useCase: ListingUseCase) -> UsersRepository {
+    static func resolveRepository(useCase: ListingUseCase) -> UsersRepositoryProtocol {
         switch useCase {
         case .listingFetchEmpty:
             let mock = mockUsers(count: 0)

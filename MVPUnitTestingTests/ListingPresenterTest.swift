@@ -61,7 +61,7 @@ class ListingPresenterTest: QuickSpec {
                     expect(self.vc.hideLoadingWasCalled).to(beTrue())
                     expect(self.vc.showAlertWasCalled).to(beFalse())
                     
-                    self.presenter.itemTap(user: self.vc.items![0])
+                    self.presenter.didTap(user: self.vc.items![0])
                     self.queue.sync {}
                     
                     expect(self.vc.showAlertWasCalled).to(beTrue())

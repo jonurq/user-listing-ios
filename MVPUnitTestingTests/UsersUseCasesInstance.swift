@@ -10,17 +10,17 @@ import Foundation
 @testable import MVPUnitTesting
 
 class UsersUseCasesInstance {
-    static func resolveUsersRepository(useCase: UsersUseCase) -> UsersRepositoryImplementation {
-        let usersRepository = UsersRepositoryImplementation(service: resolveUsersApi(useCase: useCase))
+    static func resolveUsersRepository(useCase: UsersUseCase) -> UsersRepository {
+        let usersRepository = UsersRepository(service: resolveUsersApi(useCase: useCase))
         return usersRepository
     }
     
-    static private func resolveUsersApi(useCase: UsersUseCase) -> UsersApi {
+    static private func resolveUsersApi(useCase: UsersUseCase) -> UsersApiProtocol {
         switch useCase {
         case .success:
-            return UsersApiMock(mocks: true)
-        case .failure:
             return UsersApiMock()
+        case .failure:
+            return UsersApiMock(shouldFail: true)
         }
     }
 }

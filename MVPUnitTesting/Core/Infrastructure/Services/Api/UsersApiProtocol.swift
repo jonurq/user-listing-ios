@@ -1,5 +1,5 @@
 //
-//  UsersApi.swift
+//  UsersApiProtocol.swift
 //  MVPUnitTesting
 //
 //  Created by Jonatan Urquiza on 5/18/20.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol UsersApi {
+protocol UsersApiProtocol {
     func fetchUsers(limit: Int, completion: @escaping ((Result<[UserRepresentation], Error>) -> Void))
 }

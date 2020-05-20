@@ -9,16 +9,16 @@
 import Foundation
 @testable import MVPUnitTesting
 
-class UsersApiMock: UsersApi {
+class UsersApiMock: UsersApiProtocol {
     
-    var mocks = false
+    var shouldFail: Bool
     
-    init(mocks: Bool = false) {
-        self.mocks = mocks
+    required init(shouldFail: Bool = false) {
+        self.shouldFail = shouldFail
     }
     
     func fetchUsers(limit: Int, completion: @escaping ((Result<[UserRepresentation], Error>) -> Void)) {
-        if mocks {
+        if !shouldFail {
             completion(.success(mockUsers(count: limit)))
         } else {
             completion(.failure(ApiError.noData))

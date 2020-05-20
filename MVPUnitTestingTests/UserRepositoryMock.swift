@@ -9,7 +9,7 @@
 import Foundation
 @testable import MVPUnitTesting
 
-class UserRepositoryMock: UsersRepository {
+class UserRepositoryMock: UsersRepositoryProtocol {
     
     var mock: [User]?
     

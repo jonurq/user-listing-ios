@@ -1,5 +1,5 @@
 //
-//  UsersApiImplementation.swift
+//  URLSessionUsersApi.swift
 //  MVPUnitTesting
 //
 //  Created by Jonatan Urquiza on 5/18/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UsersApiImplementation: UsersApi {
+class URLSessionUsersApi: UsersApiProtocol {
     
     let baseUrl: String
     private let urlSession = URLSession.shared

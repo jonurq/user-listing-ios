@@ -29,6 +29,7 @@ class ListingPresenterTest: QuickSpec {
                 }
                 
                 it("Should fetch an empty list of users and behave correctly") {
+                
                     expect(self.vc.showLoadingWasCalled).to(beTrue())
                     expect(self.vc.showTitleWasCalled).to(beTrue())
                     expect(self.vc.showItemsWasCalled).to(beTrue())

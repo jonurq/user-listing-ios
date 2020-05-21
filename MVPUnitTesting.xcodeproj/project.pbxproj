@@ -314,7 +314,6 @@
 			isa = PBXGroup;
 			children = (
 				D03B295D2474894E005E1944 /* Commons */,
-				D0900C9F246CA9EE00FC42E6 /* DetailScreen */,
 				D0900C9E246CA9E400FC42E6 /* ListingScreen */,
 			);
 			path = Presentation;
@@ -338,13 +337,6 @@
 				D0900CA4246CAA5F00FC42E6 /* View */,
 			);
 			path = ListingScreen;
-			sourceTree = "<group>";
-		};
-		D0900C9F246CA9EE00FC42E6 /* DetailScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 		D0900CA1246CAA4500FC42E6 /* Domain */ = {

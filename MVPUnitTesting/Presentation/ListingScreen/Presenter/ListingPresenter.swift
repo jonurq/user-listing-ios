@@ -21,7 +21,6 @@ class ListingPresenter {
     }
     
     func viewLoaded() {
-        //TODO: Localize string
         view?.show(title: "Users")
         getUsers()
     }
@@ -40,7 +39,6 @@ class ListingPresenter {
                 self.view?.show(items: users.map { UserModel.fromDomain(user: $0) })
             }
         }) { (error) in
-            //TODO: Handle all infra error cases to show more detailed message to user
             self.queue.async {
                 self.view?.hideLoading()
                 self.view?.showAlert(title: "Error", message: "Ups! Algo salió mal")

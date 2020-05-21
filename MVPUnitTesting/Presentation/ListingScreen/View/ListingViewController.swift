@@ -11,8 +11,12 @@ import UIKit
 class ListingViewController: BaseViewController {
     
     let presenter: ListingPresenter
-    var items = [UserModel]()
     private let reuseIdentifier = "CellIdentifier"
+    private var items = [UserModel]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     @IBOutlet var tableView: UITableView!
 
@@ -53,7 +57,6 @@ extension ListingViewController: ListingViewDelegate {
     
     func show(items: [UserModel]) {
         self.items = items
-        tableView.reloadData()
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  BaseStubbedViewController.swift
+//  BaseViewControllerMock.swift
 //  MVPUnitTestingTests
 //
 //  Created by Jonatan Urquiza on 5/19/20.
@@ -9,7 +9,7 @@
 import Foundation
 @testable import MVPUnitTesting
 
-class BaseStubbedViewController: BaseViewDelegate {
+class BaseViewControllerMock: BaseViewDelegate {
     
     var showLoadingWasCalled = false
     var hideLoadingWasCalled = false

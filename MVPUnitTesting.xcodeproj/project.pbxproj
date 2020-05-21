@@ -15,9 +15,9 @@
 		D03B29702474A430005E1944 /* UserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B296F2474A430005E1944 /* UserModelTest.swift */; };
 		D03B29742474AA11005E1944 /* ListingPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29732474AA11005E1944 /* ListingPresenterTest.swift */; };
 		D03B29772474AA6E005E1944 /* ListingInstanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29762474AA6E005E1944 /* ListingInstanceTest.swift */; };
-		D03B29792474ABE4005E1944 /* BaseStubbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29782474ABE4005E1944 /* BaseStubbedViewController.swift */; };
-		D03B297B2474BB46005E1944 /* ListingStubbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297A2474BB46005E1944 /* ListingStubbedViewController.swift */; };
-		D03B297D2474BB76005E1944 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297C2474BB76005E1944 /* UserRepositoryMock.swift */; };
+		D03B29792474ABE4005E1944 /* BaseViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29782474ABE4005E1944 /* BaseViewControllerMock.swift */; };
+		D03B297B2474BB46005E1944 /* ListingViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297A2474BB46005E1944 /* ListingViewControllerMock.swift */; };
+		D03B297D2474BB76005E1944 /* UserRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297C2474BB76005E1944 /* UserRepositoryStub.swift */; };
 		D03B297F2474BCAD005E1944 /* ListingUseCasesInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B297E2474BCAD005E1944 /* ListingUseCasesInstance.swift */; };
 		D03B29822474BCCF005E1944 /* ListingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29812474BCCF005E1944 /* ListingUseCase.swift */; };
 		D03B29852474D0C0005E1944 /* UsersRepositoryImplementationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B29842474D0C0005E1944 /* UsersRepositoryImplementationTest.swift */; };
@@ -68,9 +68,9 @@
 		D03B296F2474A430005E1944 /* UserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTest.swift; sourceTree = "<group>"; };
 		D03B29732474AA11005E1944 /* ListingPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenterTest.swift; sourceTree = "<group>"; };
 		D03B29762474AA6E005E1944 /* ListingInstanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInstanceTest.swift; sourceTree = "<group>"; };
-		D03B29782474ABE4005E1944 /* BaseStubbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStubbedViewController.swift; sourceTree = "<group>"; };
-		D03B297A2474BB46005E1944 /* ListingStubbedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingStubbedViewController.swift; sourceTree = "<group>"; };
-		D03B297C2474BB76005E1944 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
+		D03B29782474ABE4005E1944 /* BaseViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerMock.swift; sourceTree = "<group>"; };
+		D03B297A2474BB46005E1944 /* ListingViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerMock.swift; sourceTree = "<group>"; };
+		D03B297C2474BB76005E1944 /* UserRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryStub.swift; sourceTree = "<group>"; };
 		D03B297E2474BCAD005E1944 /* ListingUseCasesInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingUseCasesInstance.swift; sourceTree = "<group>"; };
 		D03B29812474BCCF005E1944 /* ListingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingUseCase.swift; sourceTree = "<group>"; };
 		D03B29842474D0C0005E1944 /* UsersRepositoryImplementationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepositoryImplementationTest.swift; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 		D03B296D2474A3DF005E1944 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				D03B29782474ABE4005E1944 /* BaseStubbedViewController.swift */,
+				D03B29782474ABE4005E1944 /* BaseViewControllerMock.swift */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -226,8 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				D03B29732474AA11005E1944 /* ListingPresenterTest.swift */,
-				D03B297A2474BB46005E1944 /* ListingStubbedViewController.swift */,
-				D03B297C2474BB76005E1944 /* UserRepositoryMock.swift */,
+				D03B297A2474BB46005E1944 /* ListingViewControllerMock.swift */,
+				D03B297C2474BB76005E1944 /* UserRepositoryStub.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -644,8 +644,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03B29792474ABE4005E1944 /* BaseStubbedViewController.swift in Sources */,
-				D03B297D2474BB76005E1944 /* UserRepositoryMock.swift in Sources */,
+				D03B29792474ABE4005E1944 /* BaseViewControllerMock.swift in Sources */,
+				D03B297D2474BB76005E1944 /* UserRepositoryStub.swift in Sources */,
 				D03B29852474D0C0005E1944 /* UsersRepositoryImplementationTest.swift in Sources */,
 				D03B29702474A430005E1944 /* UserModelTest.swift in Sources */,
 				D03B29872474D148005E1944 /* UsersApiMock.swift in Sources */,
@@ -654,7 +654,7 @@
 				D03B297F2474BCAD005E1944 /* ListingUseCasesInstance.swift in Sources */,
 				D03B29822474BCCF005E1944 /* ListingUseCase.swift in Sources */,
 				D03B296B2474A06F005E1944 /* UserRepresentationTest.swift in Sources */,
-				D03B297B2474BB46005E1944 /* ListingStubbedViewController.swift in Sources */,
+				D03B297B2474BB46005E1944 /* ListingViewControllerMock.swift in Sources */,
 				D03B29772474AA6E005E1944 /* ListingInstanceTest.swift in Sources */,
 				D03B29742474AA11005E1944 /* ListingPresenterTest.swift in Sources */,
 				D03B298C2474D369005E1944 /* UsersUseCase.swift in Sources */,

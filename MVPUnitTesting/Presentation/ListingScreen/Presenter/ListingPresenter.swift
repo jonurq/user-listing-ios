@@ -20,6 +20,8 @@ class ListingPresenter {
         self.queue = queue
     }
     
+    // MARK: Public Methods
+    
     func viewLoaded() {
         view?.show(title: "Users")
         getUsers()
@@ -31,18 +33,28 @@ class ListingPresenter {
         }
     }
     
+    // MARK: Private Methods
+    
     private func getUsers() {
         view?.showLoading()
         repository.getUsers(limit: limit, onSuccess: { (users) in
-            self.queue.async {
-                self.view?.hideLoading()
-                self.view?.show(items: users.map { UserModel.fromDomain(user: $0) })
-            }
+            self.handleOnSuccess(users)
         }) { (error) in
-            self.queue.async {
-                self.view?.hideLoading()
-                self.view?.showAlert(title: "Error", message: "Ups! Algo salió mal")
-            }
+            self.handleOnError()
+        }
+    }
+    
+    private func handleOnSuccess(_ users: [User]) {
+        self.queue.async {
+            self.view?.hideLoading()
+            self.view?.show(items: users.map { UserModel.fromDomain(user: $0) })
+        }
+    }
+    
+    private func handleOnError() {
+        self.queue.async {
+            self.view?.hideLoading()
+            self.view?.showAlert(title: "Error", message: "Ups! Algo salió mal")
         }
     }
 }

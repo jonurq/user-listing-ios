@@ -21,12 +21,12 @@ class ListingUseCasesInstance {
         switch useCase {
         case .listingFetchEmpty:
             let mock = mockUsers(count: 0)
-            return UserRepositoryMock(mock)
+            return UserRepositoryStub(mock)
         case .listingFetchError:
-            return UserRepositoryMock()
+            return UserRepositoryStub()
         case .listingFetchFiveUsers:
             let mock = mockUsers(count: 5)
-            return UserRepositoryMock(mock)
+            return UserRepositoryStub(mock)
         }
     }
     

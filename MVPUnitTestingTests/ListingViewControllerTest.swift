@@ -20,7 +20,7 @@ class ListingViewControllerTest: QuickSpec {
             context("When View is loaded with success five users") {
                 
                 beforeEach {
-                    let stub = ListingStubbedViewController()
+                    let stub = ListingViewControllerMock()
                     self.viewController = ListingViewController(presenter: ListingUseCasesInstance.resolvePresenter(useCase: .listingFetchFiveUsers, view: stub, queue: DispatchQueue.main))
                     self.viewController.presenter.view = self.viewController
                     self.viewController.loadView()
@@ -51,7 +51,7 @@ class ListingViewControllerTest: QuickSpec {
             context("When View is loaded with error") {
                 
                 beforeEach {
-                    let stub = ListingStubbedViewController()
+                    let stub = ListingViewControllerMock()
                     self.viewController = ListingViewController(presenter: ListingUseCasesInstance.resolvePresenter(useCase: .listingFetchError, view: stub, queue: DispatchQueue.main))
                     self.viewController.presenter.view = self.viewController
                     self.viewController.loadView()

@@ -13,7 +13,7 @@ import Nimble
 
 class ListingPresenterTest: QuickSpec {
     
-    var vc: ListingStubbedViewController!
+    var vc: ListingViewControllerMock!
     var presenter: ListingPresenter!
     let queue = DispatchQueue(label: "ListingPresenterTest")
     
@@ -22,7 +22,7 @@ class ListingPresenterTest: QuickSpec {
             context("When init presenter with mock repository empty list and view loaded") {
                 
                 beforeEach {
-                    self.vc = ListingStubbedViewController()
+                    self.vc = ListingViewControllerMock()
                     self.presenter = ListingUseCasesInstance.resolvePresenter(useCase: .listingFetchEmpty, view: self.vc, queue: self.queue)
                     self.presenter.viewLoaded()
                     self.queue.sync {}
@@ -48,7 +48,7 @@ class ListingPresenterTest: QuickSpec {
             context("When init presenter with mock repository 5 users and view loaded and tap an user") {
                 
                 beforeEach {
-                    self.vc = ListingStubbedViewController()
+                    self.vc = ListingViewControllerMock()
                     self.presenter = ListingUseCasesInstance.resolvePresenter(useCase: .listingFetchFiveUsers, view: self.vc, queue: self.queue)
                     self.presenter.viewLoaded()
                     self.queue.sync {}
@@ -78,7 +78,7 @@ class ListingPresenterTest: QuickSpec {
             context("When init presenter with mock fail repository") {
                 
                 beforeEach {
-                    self.vc = ListingStubbedViewController()
+                    self.vc = ListingViewControllerMock()
                     self.presenter = ListingUseCasesInstance.resolvePresenter(useCase: .listingFetchError, view: self.vc, queue: self.queue)
                     self.presenter.viewLoaded()
                     self.queue.sync {}

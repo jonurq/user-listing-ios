@@ -1,5 +1,5 @@
 //
-//  ListingStubbedViewController.swift
+//  ListingViewControllerMock.swift
 //  MVPUnitTestingTests
 //
 //  Created by Jonatan Urquiza on 5/19/20.
@@ -9,7 +9,7 @@
 import Foundation
 @testable import MVPUnitTesting
 
-class ListingStubbedViewController: BaseStubbedViewController, ListingViewDelegate {
+class ListingViewControllerMock: BaseViewControllerMock, ListingViewDelegate {
     
     var title: String?
     var items: [UserModel]?

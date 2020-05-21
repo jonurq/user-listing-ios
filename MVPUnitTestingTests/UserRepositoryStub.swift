@@ -1,5 +1,5 @@
 //
-//  ListingRepositoryMock.swift
+//  UserRepositoryStub.swift
 //  MVPUnitTestingTests
 //
 //  Created by Jonatan Urquiza on 5/19/20.
@@ -9,7 +9,7 @@
 import Foundation
 @testable import MVPUnitTesting
 
-class UserRepositoryMock: UsersRepositoryProtocol {
+class UserRepositoryStub: UsersRepositoryProtocol {
     
     var mock: [User]?
     
